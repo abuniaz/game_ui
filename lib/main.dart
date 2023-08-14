@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Game dino',
-      home: const MyHomePage(title: 'game dino'),
+      home: MyHomePage(title: 'game dino'),
     );
   }
 }
