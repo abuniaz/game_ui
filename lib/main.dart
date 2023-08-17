@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Game dino',
       home: MyHomePage(title: 'game dino'),
     );
@@ -29,6 +30,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            flex: 3,
+            child: Container(
+              color: Colors.blue,
+            ),
+          ),
+          Expanded(
+              child: Container(
+            color: Colors.green,
+          ))
+        ],
+      ),
+    );
   }
 }
