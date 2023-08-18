@@ -5,6 +5,7 @@ class Mybird extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('lib/images/DinoSprites_tard.gif');
+    return Image.asset('lib/images/DinoSprites_tard.gif',
+        height: 200, width: MediaQuery.sizeOf(context).width);
   }
 }
