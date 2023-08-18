@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_dino/bird.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
             flex: 3,
             child: Container(
               color: Colors.blue,
+              child: const Mybird(),
             ),
           ),
           Expanded(
