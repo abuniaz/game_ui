@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
               alignment: const Alignment(1, 0),
               duration: const Duration(milliseconds: 0),
               color: Colors.blue,
-              child: const Mybird(),
+              child: const Center(child: Mybird()),
             ),
           ),
           Expanded(
