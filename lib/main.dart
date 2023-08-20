@@ -36,7 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Expanded(
             flex: 3,
-            child: Container(
+            child: AnimatedContainer(
+              alignment: const Alignment(1, 0),
+              duration: const Duration(milliseconds: 0),
               color: Colors.blue,
               child: const Mybird(),
             ),
