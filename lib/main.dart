@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:game_dino/bird.dart';
 
@@ -29,11 +31,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  double birdYaxis = 0;
+  double birdYaxis = -1;
 
   void jump() {
-    setState(() {
-      birdYaxis -= 0.1;
+    Timer.periodic(Duration(milliseconds: 500), (timer) {
+      setState(() {
+        birdYaxis += 0.1;
+      });
     });
   }
 
